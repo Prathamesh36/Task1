@@ -1,0 +1,242 @@
+@font-face {
+    font-family: MonumentRegular;
+    src: url(./Fonts/Product\ Sans\ Regular.ttf);
+}
+
+@font-face {
+    font-family: MonumentBold;
+    src: url(./Fonts/Product\ Sans\ Bold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: MonumentRegular;
+    overflow-x: hidden;
+}
+
+.main-container {
+
+    height: 100vh;
+    text-align: center;
+}
+
+.main-container .team-heading {
+    margin: 2vw;
+    font-size: 4vw;
+    font-weight: 900;
+}
+
+.content {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(243, 227, 255);
+    height: 350px;
+}
+
+.center-content {
+    max-width: 1000px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.center-content p {
+    font-size: 2vw;
+    margin-bottom: 30px;
+    line-height: 34px;
+}
+
+.first-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.title {
+    margin: 30px;
+    color: white;
+    background-color: rgb(178, 101, 255);
+    padding: 10px 30px;
+    border-radius: 15px;
+    font-family: MonumentBold;
+    max-width: 40vw;
+
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.employee {
+    flex-basis: 20%;
+    margin: 10px;
+    text-align: center;
+}
+
+.employee img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.employee h3 {
+    margin-top: 1vw;
+}
+
+
+@media only screen and (max-width: 600px){
+    .main-container .team-heading {
+        font-size: 7vw;
+        margin-top: 5vw;
+    }
+    .content {
+        height: auto; 
+    }
+
+    .center-content p {
+        font-size: 3.5vw; 
+        margin: 0 10vw 10vw 10vw;
+        line-height: 4vw;
+    }
+
+    .title {
+        font-size: 4vw; 
+        max-width: 80vw; 
+        border-radius: 7px;
+    }
+
+    .container {
+        max-width: 90vw; 
+    }
+
+    .employee {
+        flex-basis: 40%; 
+    }
+
+    .employee img {
+        max-width: 80%;
+    }
+}
+
+@media only screen and (min-width: 600px)  and (max-width: 900px){
+    .main-container .team-heading {
+        font-size: 6vw;
+        margin-top: 5vw;
+    }
+    .content {
+        height: auto; 
+    }
+
+    .center-content p {
+        font-size: 3vw; 
+        margin: 0 6vw 6vw 6vw;
+        line-height: 4vw;
+    }
+
+    .title {
+        font-size: 3vw; 
+        max-width: 80vw; 
+        border-radius: 7px;
+    }
+
+    .container {
+        max-width: 90vw; 
+    }
+
+    .employee {
+        flex-basis: 30%; 
+    }
+
+    .employee img {
+        max-width: 80%;
+    }
+}
+
+@media only screen and (min-width: 900px)  and (max-width: 1200px){
+    .main-container .team-heading {
+        font-size: 5vw;
+        margin-top: 5vw;
+    }
+    .content {
+        height: auto; 
+    }
+
+    .center-content p {
+        font-size: 2vw; 
+        margin: 0 6vw 6vw 6vw;
+        line-height: 3vw;
+    }
+
+    .title {
+        font-size: 2.8vw; 
+        max-width: 80vw; 
+        border-radius: 15px;
+    }
+
+    .container {
+        max-width: 90vw; 
+    }
+
+    .employee {
+        flex-basis: 20%; 
+    }
+
+    .employee img {
+        max-width: 80%;
+    }
+}
+
+
+/*
+@media only screen and (max-width: 800px) {
+
+}
+
+@media only screen and (min-width: 601px) {
+    .main-container .team-heading {
+        font-size: 40px;
+    }
+
+    .content {
+        height: 400px;
+    }
+
+    .center-content p {
+        font-size: 2vw; 
+        
+    }
+
+    .title {
+        font-size: 3vw; 
+        max-width: 40vw; 
+    }
+
+    .container {
+        max-width: 1200px; 
+    }
+
+    .employee {
+        flex-basis: 20%; 
+    }
+
+    .employee img {
+        max-width: 100%;
+    }
+}
+*/
